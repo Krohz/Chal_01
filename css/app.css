@@ -9,7 +9,127 @@ html {
     box-sizing: inherit;
 }
 
+body{
+    font-family: "Red Hat Display", sans-serif;
+}
+p{
+    margin: 0rem;
+}
+
 img {
     max-width: 100%;
     display: block;
+}
+
+.fondo{
+    background-image: url(../images/pattern-background-mobile.svg);
+    background-size: 100%;
+    background-position: cover;
+    background-repeat: no-repeat;
+    background-color:  hsl(225, 100%, 94%);
+}
+
+@media (min-width: 768px) {
+    .fondo{
+        background-image: url(../images/pattern-background-desktop.svg);
+        background-size: 100%;
+        background-position: cover;
+        background-repeat: no-repeat;
+        background-color:  hsl(225, 100%, 94%);
+    }
+}
+
+.contenedor{
+    max-width: 40rem;
+    margin: 0 auto;
+    background-color: white;
+}
+
+.contain{
+    margin-top: 10rem;
+    border: 1px solid #e1e1ee;
+    border-radius: 1rem 1rem;
+    box-shadow: 8px 8px 30px 1px rgba(0,0,0,0.6);
+-webkit-box-shadow: 8px 8px 30px 1px rgba(0,0,0,0.6);
+-moz-box-shadow: 8px 8px 30px 1px rgba(0,0,0,0.6);
+}
+
+.imange{
+    width: 100%;
+}
+
+.chiqui{
+
+    max-width: 70%;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.titulo{
+    padding-top: 1.5rem;
+    font-weight: 900;
+    font-size: 3rem;
+}
+
+.contenido p{
+    font-size: 1.5rem;
+    color:  gray;
+    margin-bottom: 2rem;
+}
+
+.pagar{
+    background-color: #ECECEC;
+    padding: 1rem 1rem;
+    border: 1px solid #ECECEC;
+    border-radius:1rem 1rem; 
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.flex{
+    display: flex;
+    align-items: center;
+}
+
+.coloca{
+    display: flex;
+    flex-direction: column;
+    margin: 0.5rem 0;
+}
+
+.coloca p{
+    font-size: 1.2rem;
+}
+
+.negrita{
+    font-weight: 900;
+    font-size: 1.2rem;
+}
+
+a{
+    font-size: 1.2rem;
+}
+
+.btn{
+    display: block;
+    background-color: hsl(245, 75%, 52%);
+    color: white;
+    font-weight: 900;
+    text-transform: capitalize;
+    padding: 1rem;
+    margin: 2rem 0;
+    text-align: center;
+    border:1px solid hsl(245, 75%, 52%);
+    border-radius: 1rem 1rem;
+    font-size: 1.2rem;
+    box-shadow: -1px 13px 14px -9px rgba(0,0,0,0.54);
+-webkit-box-shadow: -1px 13px 14px -9px rgba(0,0,0,0.54);
+-moz-box-shadow: -1px 13px 14px -9px rgba(0,0,0,0.54);
+}
+
+.btn:hover{
+    background-color:  hsl(224, 23%, 55%);
+    border:1px solid hsl(224, 23%, 55%) ;
+    cursor: pointer;
 }
